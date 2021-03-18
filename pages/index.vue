@@ -132,16 +132,14 @@ export default {
   color: #2C3E50
   background-color: #FAFAFA
 .users
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
+  margin-top: 15px
+  @include column
   width: 600px
-  margin: auto
+  margin: auto auto 100px auto
 .user-left, .user-right, .user, .header
-  display: flex
-  flex-direction: row
-  align-items: center
+  @include row
+.header
+  margin-bottom: 26px
 .button-sort
   height: 34px
   width: 34px
@@ -183,7 +181,6 @@ export default {
   display: flex
   flex-direction: column
   font-family: 'Avenir'
-
 .user:nth-of-type(2)
   .avatar
     border: 4px solid #FDD835
@@ -196,7 +193,7 @@ export default {
 .dimmer
   height: 100%
   width: 100%
-  background-color: rgba(0, 0, 0, 0.07)
+  background-color: rgba(0, 0, 0, 0.2)
   position: fixed
   bottom: 0
   z-index: 1000
@@ -217,9 +214,8 @@ export default {
 .close-modal
   height: 32px
   width: 32px
-  display: flex
+  @include column
   justify-content: center
-  align-items: center
   img
     height: 15px
     width: 15px
@@ -234,10 +230,8 @@ export default {
 .modal-right
   width: 60%
 .modal-header, .modal-body
-  align-items: center
+  @include row
   width: 100%
-  display: flex
-  flex-direction: row
   justify-content: space-between
 .modal-right
   margin-left: 37px
@@ -248,7 +242,6 @@ export default {
 .bio-header
   font-size: 24px
   font-weight: 400
-
 .modal-footer
   margin-top: 17px
 .modal-data

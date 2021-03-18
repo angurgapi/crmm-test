@@ -9,8 +9,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12"
+    "node-sass": "^5.0.0",
+    "nuxt": "^2.14.12",
+    "nuxt-sass-resources-loader": "^2.0.5"
   },
   "devDependencies": {
     "fibers": "^5.0.0",

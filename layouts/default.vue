@@ -26,12 +26,10 @@ body, #__nuxt, #__layout
   margin: 0
 
 .wrapper
-  display: flex
+  @include column
   width: 100%
   min-height: 100%
-  flex-direction: column
   justify-content: center
-  align-items: center
 
 </style>
 

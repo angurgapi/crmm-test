@@ -28,8 +28,12 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+  '@nuxtjs/style-resources',
   ],
-
+  styleResources: {
+    sass: ['@/assets/scss/mixins.sass'
+    ]
+  },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
   ],
